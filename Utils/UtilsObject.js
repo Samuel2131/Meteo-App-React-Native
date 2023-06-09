@@ -1,5 +1,7 @@
+
 import React  from "react"
 import { Ionicons } from '@expo/vector-icons';
+import DefaultImg from "./../img/DefaultImage.jpeg";
 
 const defaultStyle = {
    date:{ 
@@ -13,7 +15,7 @@ const defaultStyle = {
 }
 
 const controlBackground = () => {
-   if((!defaultStyle.date.backgroundAnimatedOn && !defaultStyle.date.backgroundOn))return 'https://www.sys-point.com/wp-content/uploads/2019/05/sfondo-blu.jpg';
+   if((!defaultStyle.date.backgroundAnimatedOn && !defaultStyle.date.backgroundOn)) return "https://wallpapercave.com/wp/wp4411792.jpg";
 }
 
 const conversionC_F = (tempC) =>{return ((tempC*(9/5))+32)}

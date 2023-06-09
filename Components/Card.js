@@ -9,7 +9,7 @@ import GestureRecognizer from 'react-native-swipe-gestures';
 
 const iconHeart = <Ionicons name="heart" size={18} color="red" />;
 
-const defaultImg = () => {return 'https://www.sys-point.com/wp-content/uploads/2019/05/sfondo-blu.jpg'}
+const defaultImg = () => {return "https://wallpapercave.com/wp/wp4411792.jpg"}
 
 const imgTempAnimated = (description,ora) =>{
   if(description.includes('SERENO')){
@@ -110,7 +110,7 @@ const CardApp = (props) =>{
    var ora = props.object.list[0].dt_txt;
    ora = ora.substr(11,5);
    var imageProva = defaultImg();
-   if(controlBackground()!=='https://www.sys-point.com/wp-content/uploads/2019/05/sfondo-blu.jpg')imageProva = defaultStyle.date.backgroundAnimatedOn ? imgTempAnimated(props.object.list[0].weather[0].description.toUpperCase(),ora.substr(0,2)) : imgTemp(props.object.list[0].weather[0].description.toUpperCase(),ora.substr(0,2));
+   if(controlBackground() !== imageProva ) imageProva = defaultStyle.date.backgroundAnimatedOn ? imgTempAnimated(props.object.list[0].weather[0].description.toUpperCase(),ora.substr(0,2)) : imgTemp(props.object.list[0].weather[0].description.toUpperCase(),ora.substr(0,2));
   return( 
    <GestureRecognizer>
       <Swipeable renderLeftActions={deleteButton} renderRightActions={favouriteButton}>
