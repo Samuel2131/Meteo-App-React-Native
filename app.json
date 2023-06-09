@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "meteo-App",
+    "slug": "meteo-App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./img/R.png",
+    "splash": {
+      "image": "./img/R.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 5000
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier":"com.meteoApp",
+      "buildNumber":"1.0.0"
+    },
+    "android": {
+      "package":"com.meteoApp",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

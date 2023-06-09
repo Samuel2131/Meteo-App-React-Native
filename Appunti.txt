@@ -1,0 +1,18 @@
+Alert.prompt(
+  "Aggiungi",
+  "Che città vuoi aggiungere?",
+  [
+    {
+      text:'cancel',
+      onPress:() => {this.setState({textValue:''})}
+    },
+    {
+      text:'Ok',
+      onPress:(text) => {
+        this.state.city.push({textValue:text,key:this.state.maxIndexList})
+        this.setState({maxIndexList:this.state.city.length});
+      },
+    }
+  ],
+  'plain-text',
+)
